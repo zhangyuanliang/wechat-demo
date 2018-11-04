@@ -1,0 +1,9 @@
+<template name="banner">
+  <swiper indicator-dots="true" autoplay="true" circular="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

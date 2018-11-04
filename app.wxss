@@ -1,0 +1,19 @@
+@import './assets/styles/weui.wxss';
+@import './assets/styles/base.wxss';
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

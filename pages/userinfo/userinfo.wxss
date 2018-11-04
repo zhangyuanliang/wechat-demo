@@ -1,0 +1,15 @@
+.user-info {
+  font-size: 30rpx;
+}
+
+.arrow {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 36rpx;
+}
+
+.arrow image {
+  width: 20rpx;
+  height: 20rpx;
+}

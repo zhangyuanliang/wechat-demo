@@ -1,0 +1,26 @@
+<view class="weui-cells user-info">
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <p>头像</p>
+    </view>
+    <view class="weui-cell__ft">说明文字</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>昵称</text>
+    </view>
+    <view class="weui-cell__ft">昵称xx</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>性别</text>
+    </view>
+    <view class="weui-cell__ft">女</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>手机号</text>
+    </view>
+    <view class="weui-cell__ft">13888888888</view>
+  </view>
+</view>

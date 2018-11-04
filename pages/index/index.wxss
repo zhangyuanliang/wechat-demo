@@ -1,0 +1,96 @@
+.index-wrap {
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+
+.content-wrap {
+  margin: 0 20rpx;
+}
+.car-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #cfcccc;
+}
+
+.car-des {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-info image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+
+.car-info text {
+  font-size: 26rpx;
+}
+
+.car-info text:first-child {
+  font-size: 30rpx;
+}
+
+.car-type {
+  font-size: 24rpx;
+  color: rgb(179, 174, 174);
+}
+
+.arrow {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20rpx;
+  color: #9b9797;
+}
+
+.arrow image {
+  width: 20rpx;
+  height: 22rpx;
+  margin-left: 14rpx;
+}
+
+/* 车后服务 */
+
+.service-cls .title image {
+  width: 43rpx;
+  height: 41rpx;
+}
+
+.service-cls .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx 0rpx;
+}
+
+.service-cls .title text {
+  padding: 0 10rpx;
+}
+
+.service-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.service-panel .item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  color:#868383
+}
+
+.service-panel image {
+  width: 250rpx;
+  height: 250rpx;
+  margin-bottom: 10rpx;
+}
+

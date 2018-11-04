@@ -1,0 +1,51 @@
+<view class="shop-cart">
+  <view class="goodsList">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="list-box">
+        <view class="goods-info">
+          <icon class="icon-check" type="success" color="{{item.ischecked?'red':'#999'}}" bindtap="selectItem" data-index="{{index}}" data-id="{{item.id}}" size="20" />
+          <view class="img-box">
+            <image src="{{item.img}}" class="img" />
+          </view>
+          <view class="text-box">
+            <view class="goods-title">
+              <navigator url="/pages/goods_detail?">
+                {{item.goodsName}}
+              </navigator>
+            </view>
+            <!--  -->
+            <view class="lable">
+              <view class="goods-lable">{{item.goodsSkuValName}}</view>
+              <view class="bo-label" wx:if="{{item.type==2}}">补货</view>
+            </view>
+            <view class="goods-price">¥ {{item.price}}</view>
+            <view class="buy-num">
+              <view class="jian-btn {{item.num==1? 'disabled' : ''}}" catchtap="subtractBtnTap" data-index="{{index}}" data-id="{{item.id}}">-</view>
+              <input type="number" value="{{item.num}}" disabled/>
+              <view class="jia-btn {{item.num==1000? 'disabled' : ''}}" catchtap="addBtnTap" data-index="{{index}}" data-id="{{item.id}}">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="empty_cart" wx:if="{{list.length==0}}">
+    <image src="../../assets/images/empty_cart.png" class="empty_cart_img"></image>
+    <view class="empty_cart_text">购物车还是空的</view>
+    <view class="shop_btn">
+      <view class="block btn_group">
+        <view class="btn get_store">去逛逛</view>
+      </view>
+    </view>
+  </view>
+  <view class="jiesuan-box">
+    <view class="left-price">
+      <view bindtap="selectAll" class="all_select_box">
+        <icon type="success" size="20" color="{{allChecked?'red':'rgb(153,153,153)'}}" />
+        <view class="all_select">全选</view>
+      </view>
+      <view class="total" hidden="{{noSelect}}">合计：¥ {{totalPrice}}</view>
+    </view>
+    <view class="to-pay-btn {{noSelect?'no-select':''}}" hidden="{{!saveHidden}}" bindtap="toPayOrder">去结算</view>
+  </view>
+</view>

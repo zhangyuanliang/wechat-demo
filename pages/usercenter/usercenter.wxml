@@ -1,0 +1,77 @@
+<view class="user-wrap">
+  <view class="user-infor-wrap">
+    <view class="user-img" bindtap="toUserInfo">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName" bindtap="toUserInfo"></open-data>
+  </view>
+  <view class="order-wrap">
+    <view class="weui-cell weui-cell_access myorder">
+      <view class="weui-cell__bd">我的订单</view>
+      <view class="weui-cell__ft">
+        <text>全部订单</text>
+      </view>
+    </view>
+    <view class="weui-flex order-type">
+      <view class="weui-flex__item order-item">
+        <image mode="scaleToFill" src="../../assets/images/center1.png"></image>
+        <view>
+          <text>待付款</text>
+        </view>
+      </view>
+      <view class="weui-flex__item order-item">
+        <image mode="scaleToFill" src="../../assets/images/center2.png"></image>
+        <view>
+          <text>待使用</text>
+        </view>
+      </view>
+      <view class="weui-flex__item order-item">
+        <image mode="scaleToFill" src="../../assets/images/center3.png"></image>
+        <view>
+          <text>已完成</text>
+        </view>
+      </view>
+      <view class="weui-flex__item order-item">
+        <image mode="scaleToFill" src="../../assets/images/center1.png"></image>
+        <view>
+          <text>评价</text>
+        </view>
+      </view>
+      <view class="weui-flex__item order-item">
+        <image mode="scaleToFill" src="../../assets/images/center3.png"></image>
+        <view>
+          <text>取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="center-list">
+    <view class="list-son">
+      <image class="icon" src="../../assets/images/icoList.png"></image>
+      <text>我的爱车</text>
+      <view class="arrow">
+        <image src="../../assets/images/arrowRight_grey.png"></image>
+      </view>
+    </view>
+    <view class="list-son">
+      <image src="../../assets/images/icoList.png"></image>
+      <text>联系客服</text>
+      <view class="arrow">
+        <image src="../../assets/images/arrowRight_grey.png"></image>
+      </view>
+    </view>
+    <view class="list-son">
+      <image src="../../assets/images/icoList.png"></image>
+      <text>关于我们...</text>
+      <view class="arrow">
+        <image src="../../assets/images/arrowRight_grey.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="unlogin-wrap">
+    <view class="unlogin">
+      <button type="default" hover-class="other-button-hover"> 退出登陆 </button>
+    </view>
+  </view>
+
+</view>

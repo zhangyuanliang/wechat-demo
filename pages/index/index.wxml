@@ -1,0 +1,32 @@
+<import src="../components/banner/banner.wxml" />
+
+<view class='index-wrap'>
+  <template is="banner" data="{{imgUrls: imgUrls}}"/>
+  <view class="content-wrap car-info">
+    <image mode="aspectFit" src="../../assets/images/quickCar.png"></image>
+    <view class="car-des">
+      <text>浙Axxx</text>
+      <text class="car-type">Jeep 城市猎人</text>
+    </view>
+    <view class="arrow">
+      <text>完善爱车</text>
+      <image src="../../assets/images/arrowRight_grey.png"></image>
+    </view>
+  </view>
+  <view class="content-wrap service-cls">
+    <view class="title">
+      <image src="../../assets/images/icoList.png"></image>
+      <text>车后服务</text>
+    </view>
+    <view class="service-panel">
+      <view class="item">
+        <image src="../../assets/images/parkDemo.png"></image>
+        <text>保养专区</text>
+      </view>
+      <view class="item">
+        <image src="../../assets/images/parkDemo.png"></image>
+        <text>安全检测</text>
+      </view>
+    </view>
+  </view>
+</view>
