@@ -1,8 +1,8 @@
 // pages/shoppingCart/shoppingCart.js
 import {
   SHOPPING_CART
-} from '../../utils/constant';
-// import api from '../../api/api';
+} from '../../utils/constant'
+// import api from '../../api/api'
 
 Page({
   data: {
@@ -10,35 +10,31 @@ Page({
     noSelect: false,
     saveHidden: true,
     totalPrice: 0,
-    operating: false,
     allChecked: false
   },
 
   subtractBtnTap: function(e) {
-    if (this.data.operating) {
-      return;
-    }
-    this.data.operating = true
-    var id = e.currentTarget.dataset.id
-    var index = parseInt(e.currentTarget.dataset.index)
-    var num = this.data.list[index].num
-    // 如果只有1件了，就不允许再减了
-    if (num > 1) {
-      num--
-    } else {
+    let id = e.currentTarget.dataset.id
+    let index = e.currentTarget.dataset.index
+    let item = this.data.list[index];
+    if (!item.ischecked) {
       return
     }
-    this.reduceGoodNum(id, num, index)
+    let num = item.num
+    if (item.num === 1) {
+      return
+    }
+    this.reduceGoodNum(id, --num, index)
   },
 
   addBtnTap: function(e) {
-    if (this.data.operating) {
+    let id = e.currentTarget.dataset.id
+    let index = e.currentTarget.dataset.index
+    let item = this.data.list[index];
+    if (!item.ischecked) {
       return
     }
-    this.data.operating = true
-    var id = e.currentTarget.dataset.id
-    var index = parseInt(e.currentTarget.dataset.index)
-    var num = this.data.list[index].num
+    var num = item.num
     this.addGoodNum(id, ++num, index)
   },
 
@@ -79,14 +75,15 @@ Page({
     const list = this.data.list;
     list[index].ischecked = !ischecked
     if (list[index].ischecked) {
-      totalPrice += parseInt(list[index].priceSubtotal)
+      totalPrice += list[index].priceSubtotal
     } else {
-      totalPrice -= parseInt(list[index].priceSubtotal)
+      totalPrice -= list[index].priceSubtotal
     }
     this.setData({
       list: list,
       totalPrice: totalPrice
     })
+    this.shoppingCart.set(list)
   },
 
   reduceGoodNum(id, num, index) {
@@ -99,7 +96,6 @@ Page({
     this.setData({
       list: list,
       totalPrice: totalPrice,
-      operating: false
     })
     this.shoppingCart.set(list)
   },
@@ -113,7 +109,6 @@ Page({
     this.setData({
       list: list,
       totalPrice: totalPrice,
-      operating: false
     })
     this.shoppingCart.set(list)
   },
