@@ -40,5 +40,8 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  onHide: function() {
+    wx.clearStorageSync()
   }
 })
