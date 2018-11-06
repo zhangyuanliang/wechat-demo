@@ -10,7 +10,13 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ]
   },
-  //事件处理函数
+
+  addCarInfo: function() {
+    wx.navigateTo({
+      url: '../car/index/index'
+    })
+  },
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

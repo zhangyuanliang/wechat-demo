@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/usercenter/usercenter",
-    "pages/shopping/shopping",
     "pages/index/index",
-    "pages/userinfo/userinfo"
+    "pages/shopping/shopping",
+    "pages/car/index/index",
+    "pages/usercenter/index/index",
+    "pages/usercenter/userinfo/userinfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +31,7 @@
         "text": "购物车"
       },
       {
-        "pagePath": "pages/usercenter/usercenter",
+        "pagePath": "pages/usercenter/index/index",
         "iconPath": "assets/images/user.png",
         "selectedIconPath": "assets/images/user-active.png",
         "text": "个人中心"

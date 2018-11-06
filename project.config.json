@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -47,7 +47,13 @@
 				{
 					"id": -1,
 					"name": "shopping",
-					"pathName": "pages/shopping/shopping"
+					"pathName": "pages/shopping/shopping",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "car-info",
+					"pathName": "pages/car/index/index"
 				}
 			]
 		}

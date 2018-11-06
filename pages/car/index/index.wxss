@@ -1,0 +1,48 @@
+.car-info-wrap {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 0 30rpx 40rpx;
+}
+
+.car-info-wrap .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1rpx solid #bdbbbb;
+}
+
+.car-info-wrap .item view:first-child {
+  width: 200rpx;
+  font-size: 32rpx;
+}
+
+.end-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.end-arrow image {
+  width: 20rpx;
+  height: 22rpx;
+  margin-left: 14rpx;
+}
+
+.section {
+  width: 100rpx !important;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.down-arrow {
+  margin: 0 20rpx;
+}
+
+.down-arrow image {
+  width: 23rpx;
+  height: 16rpx;
+}

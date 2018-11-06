@@ -114,7 +114,7 @@ page {
 }
 
 .fz30 {
-  font-size: 30rpx;
+  font-size: 30rpx !important;
 }
 
 .fz31 {

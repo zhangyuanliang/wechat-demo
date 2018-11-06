@@ -1,0 +1,58 @@
+<!--pages/car/index/index.wxml-->
+<view class='car-info-wrap'>
+  <view class="item car-type">
+    <view>车型:</view>
+    <view class="flex-grow c666">请选择</view>
+    <view class="end-arrow">
+      <image src="/assets/images/arrowRight_grey.png" />
+    </view>
+  </view>
+  <view class="item">
+    <view>车牌号:</view>
+    <view class="flex-grow flex">
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker fz30">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="down-arrow">
+        <image src="/assets/images/icoArrowDown_act.png"/>
+      </view>
+      <view class="car-num">
+        Axxxxx
+      </view>
+    </view>
+    <view></view>
+  </view>
+  <view class="item">
+    <view>行驶里程:</view>
+    <view class="flex-grow">
+      <input placeholder="请输入" />
+    </view>
+    <view></view>
+  </view>
+  <view class="item">
+    <view>车架号:</view>
+    <view class="flex-grow">
+      <input placeholder="填写车架号" />
+    </view>
+    <view></view>
+  </view>
+  <view class="item">
+    <view>发动机号:</view>
+    <view class="flex-grow">
+      <input placeholder="填写发动机号" />
+    </view>
+    <view></view>
+  </view>
+  <view class="item">
+    <view>车险公司:</view>
+    <view class="flex-grow">
+      <input placeholder="请输入" />
+    </view>
+    <view></view>
+  </view>
+
+</view>

@@ -2,7 +2,7 @@
 
 <view class='index-wrap'>
   <template is="banner" data="{{imgUrls: imgUrls}}"/>
-  <view class="content-wrap car-info">
+  <view class="content-wrap car-info" bindtap="addCarInfo">
     <image mode="aspectFit" src="../../assets/images/quickCar.png"></image>
     <view class="car-des">
       <text>浙Axxx</text>
